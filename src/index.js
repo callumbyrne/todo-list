@@ -1,7 +1,6 @@
-let myProjects = [];
+import './styles.css';
 
-// Todo factory function
-const Todo = (title, description, dueDate, priority) => {
-    return { title, description, dueDate, priority };
-};
+// document.addEventListener('DOMContentLoaded', );
+
+
 

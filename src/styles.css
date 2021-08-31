@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(./Raleway/static/Raleway-Bold.ttf);
+}
+
+html {
+    box-sizing: border-box;
+    background-color: #212121;
+    font-family: 'Raleway', sans-serif;
+    color: #dedede;
+    font-size: 16px;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    flex: 0 1 auto;
+    background-color: #121212;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h1 {
+    margin: 10px auto;
+    display: inline;
+}
+
+#check {
+    color: #bb86fc;
+}
+
+.body {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.sidebar {
+    background-color: #2e2e2e;
+    flex: 0 1 15%;
+    box-shadow: 0 1px 10px rgb(15, 15, 15);
+    padding: 20px;
+}
+
+.form form{
+    display: flex;
+}
+
+#newProject {
+    flex: 1 1 auto;
+    height: 1.5rem;
+    border: none;
+    padding: 1px;
+    border-radius: 3px;
+    text-indent: 10px;
+}
+
+#newProjectBtn {
+    flex: 0 1 auto;
+    background-color: #bb86fc;
+    border: none;
+    border-radius: 3px;
+    height: 1.6rem;
+    width: 1.6rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+#newProjectBtn:active {
+    transform: translateX(1px) translateY(1px);
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.footer {
+    flex: 0 1 40px;
+    background-color: #121212;
+    color: #bb86fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
