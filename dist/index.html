@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ccb192a829.js" crossorigin="anonymous"></script>
     <title>Todos</title>
 </head>
 
@@ -29,7 +30,42 @@
                     </form>
                 </div>
             </div>
-            <div class="main"></div>
+            <div class="main">
+                <div class="display">
+                    <h2>Your Todos</h2>
+                    <div class="todos">
+                        <div>Get Groceries</div>
+                    </div>
+                    <div class="newTodo"><i class="fas fa-plus"></i>&ensp; Add new task</div>
+                    <div class="form-body">
+                        <form>
+                            <div class="form-box">
+                                <label for="title">Title</label>
+                                <input type="text" id="title">
+                            </div>
+                            <div class="form-box">
+                                <label for="description">Description</label>
+                                <input type="text" id="description">
+                            </div>
+                            <div class="form-box">
+                                <label for="date">Due Date</label>
+                                <input type="date" id="date">
+                            </div>
+                            <div class="form-box">
+                                <label for="priority">Priority</label>
+                                <select name="priority" id="priority">
+                                    <option value="High">High</option>
+                                    <option value="Low">Low</option>
+                                </select>
+                            </div>
+                            <div class="form-submit">
+                                <button id="submitBtn">Submit</button>
+                                <button id="cancel">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="footer">&#10003;</div>
     </div>
