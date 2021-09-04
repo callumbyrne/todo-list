@@ -23,4 +23,6 @@ const newProject = (e) => {
     ul.appendChild(newLi);
 };
 
-export { newProject };
+
+
+export { newProject, projectsArray };

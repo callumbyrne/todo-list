@@ -1,5 +1,6 @@
 import './styles.css';
-import { newProject } from './newProject';
+import { newProject, projectsArray } from './newProject';
+import { currentProject } from './newTodo';
 
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('newProjectBtn').addEventListener('click', (e) => newProject(e));
@@ -17,3 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+console.table(projectsArray);
+console.log(currentProject);
