@@ -1,25 +1,16 @@
 import './styles.css';
-import { newProject, projectsArray } from './newProject';
-import { currentProject } from './newTodo';
-import { newTodo } from './newTodo';
+import { newProject, projectsArray } from './projects';
+import { currentProject } from './todos';
+import { newTodo, openForm, closeForm } from './todos';
 
 document.addEventListener('DOMContentLoaded', () => {
+    //create new project
     document.getElementById('newProjectBtn').addEventListener('click', (e) => newProject(e));
-    document.querySelector('.newTodo').addEventListener('click', () => {
-        const newTodo = document.querySelector('.newTodo');
-        newTodo.style.display = 'none';
-        const formBody = document.querySelector('.form-body');
-        formBody.style.display = 'block';
-    });
-    document.getElementById('cancel').addEventListener('click', () => {
-        const formBody = document.querySelector('.form-body');
-        formBody.style.display = 'none';
-        const newTodo = document.querySelector('.newTodo');
-        newTodo.style.display = 'block';
-    });
+    //open add new todo form
+    document.querySelector('.newTodo').addEventListener('click', openForm);
+    //close add new todo form
+    document.getElementById('cancel').addEventListener('click', closeForm);
+    //submit new todo
     document.getElementById('submitBtn').addEventListener('click', (e) => newTodo(e));
-
+    //delete todo
 });
-
-console.table(projectsArray);
-console.log(currentProject);

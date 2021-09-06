@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Raleway';
-    src: url(./Raleway/static/Raleway-Bold.ttf);
+    src: url(./Raleway/Raleway-VariableFont_wght.ttf);
 }
 
 html {
@@ -9,6 +9,8 @@ html {
     font-family: 'Raleway', sans-serif;
     color: #dedede;
     font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 body {
@@ -95,7 +97,7 @@ h1 {
     margin-bottom: 50px;
     margin-left: 30px;
     border-top: 1px solid #aaaaaa;
-    padding: 10px;
+    /* padding: 10px 0px; */
 }
 
 .newTodo {
@@ -179,26 +181,43 @@ h1 {
 }
 
 .todo {
-    margin: 10px auto;
+    /* margin: 10px auto; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-top: 1px solid #aaaaaa;
+    /* border-bottom: 1px solid #aaaaaa; */
+    font-weight: 700;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+
+.todo:hover {
+    background-color: #3d3d3d;
 }
 
 .todo div:nth-child(1),
-div:nth-child(3),
-div:nth-child(4) {
+.todo div:nth-child(3),
+.todo div:nth-child(4) {
     flex: 1 1 auto;
 }
 
 .todo div:nth-child(2) {
     flex: 1 0 auto;
+    font-weight: 400;
 }
 
 .todo div:nth-child(3),
-div:nth-child(4) {
+.todo div:nth-child(4) {
     text-align: right;
+}
+
+.todo div:nth-child(5) {
+    margin-left: 20px;
+}
+
+.fa-trash-alt:hover {
+    cursor: pointer;
+    color: #cf3e40;
 }
 
 #footer {
