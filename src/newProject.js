@@ -9,14 +9,14 @@ const newProject = (e) => {
 
     if (projectName.length > 17) {
         alert('Project name is too long!');
-        document.querySelector('form').reset();
+        document.querySelector('.projectForm').reset();
         return;
     };
 
     const newArray = [projectName];
     projectsArray.push(newArray);
     console.table(projectsArray);
-    document.querySelector('form').reset();
+    document.querySelector('.projectForm').reset();
 
     const newLi = document.createElement('li');
     newLi.innerText = projectName;

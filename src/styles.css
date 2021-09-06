@@ -50,7 +50,7 @@ h1 {
     padding: 20px;
 }
 
-.form form{
+.projectForm form{
     display: flex;
 }
 
@@ -178,7 +178,30 @@ h1 {
   transform: translateX(1.5px) translateY(1.5px);
 }
 
-.footer {
+.todo {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #aaaaaa;
+}
+
+.todo div:nth-child(1),
+div:nth-child(3),
+div:nth-child(4) {
+    flex: 1 1 auto;
+}
+
+.todo div:nth-child(2) {
+    flex: 1 0 auto;
+}
+
+.todo div:nth-child(3),
+div:nth-child(4) {
+    text-align: right;
+}
+
+#footer {
     flex: 0 1 40px;
     background-color: #121212;
     color: #bb86fc;

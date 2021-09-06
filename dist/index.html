@@ -23,7 +23,7 @@
                         <li>Default</li>
                     </ul>
                 </div>
-                <div class="form">
+                <div class="projectForm">
                     <form>
                         <input type="text" name="newProject" id="newProject" placeholder="Add new project">
                         <button id="newProjectBtn">&#10003;</button>
@@ -38,7 +38,7 @@
                     </div>
                     <div class="newTodo"><i class="fas fa-plus"></i>&ensp; Add new task</div>
                     <div class="form-body">
-                        <form>
+                        <form id="todoForm">
                             <div class="form-box">
                                 <label for="title">Title</label>
                                 <input type="text" id="title">
@@ -54,8 +54,8 @@
                             <div class="form-box">
                                 <label for="priority">Priority</label>
                                 <select name="priority" id="priority">
-                                    <option value="High">High</option>
                                     <option value="Low">Low</option>
+                                    <option value="High">High</option>
                                 </select>
                             </div>
                             <div class="form-submit">
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer">&#10003;</div>
+        <div id="footer">&#10003;</div>
     </div>
 
     <script src="main.js"></script>
