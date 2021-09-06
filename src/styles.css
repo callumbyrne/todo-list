@@ -74,6 +74,7 @@ h1 {
     width: 1.7rem;
     font-weight: 600;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 #newProjectBtn:active {

@@ -17,7 +17,6 @@ const newTodo = (e) => {
     currentProject.push(todo);
     id += 1;
     document.querySelector('#todoForm').reset();
-
     renderTodo(todo);
     closeForm();
 };

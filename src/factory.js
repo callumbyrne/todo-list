@@ -1,6 +1,6 @@
 // Todo factory function
-const Todo = (title, description, dueDate, priority, id) => {
-    return { title, description, dueDate, priority, id };
+const Todo = (title, description, date, priority, id) => {
+    return { title, description, date, priority, id };
 };
 
 export { Todo };
