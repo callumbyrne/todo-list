@@ -1,8 +1,7 @@
-import { projectsArray } from './projects';
+import { currentProject } from './projects';
 import { Todo } from './factory';
 
 const todoList = document.querySelector('.todos');
-let currentProject = projectsArray[0];
 let id = 1;
 
 const newTodo = (e) => {
@@ -33,7 +32,7 @@ const renderTodo = (todo) => {
     const todoDescription = document.createElement('div');
     todoDescription.innerText = todo.description;
     const todoDate = document.createElement('div');
-    todoDate.innerText = todo.date;
+    todoDate.innerText = todo.date || 'No Date';
     const todoPriority = document.createElement('div');
     todoPriority.innerText = todo.priority;
     const todoDelete = document.createElement('div');

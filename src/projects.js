@@ -1,9 +1,10 @@
 const projectsArray = [['Default']];
+let currentProject = projectsArray[0];
 
 const newProject = (e) => {
     e.preventDefault();
 
-    const ul = document.querySelector('ul');
+    const projects = document.getElementById('projects');
 
     const projectName = document.getElementById('newProject').value;
 
@@ -16,13 +17,16 @@ const newProject = (e) => {
     const newArray = [projectName];
     projectsArray.push(newArray);
     console.table(projectsArray);
-    document.querySelector('.projectForm').reset();
+    document.getElementById('projectForm').reset();
 
-    const newLi = document.createElement('li');
-    newLi.innerText = projectName;
-    ul.appendChild(newLi);
+    const project = document.createElement('div');
+    project.innerText = projectName;
+    project.classList.add('project');
+    projects.appendChild(project);
 };
 
 
 
-export { newProject, projectsArray };
+
+
+export { newProject, currentProject };
