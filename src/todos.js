@@ -25,8 +25,11 @@ const renderTodo = (todo) => {
     const todoContainer = document.createElement('div');
     todoContainer.classList.add('todo');
     todoContainer.setAttribute('data-id', todo.id);
+    const todoStatus = document.createElement('div');
+    todoStatus.setAttribute('id', `status-${todo.id}`);
+    todoStatus.innerHTML = '<i class="far fa-square"></i>'
     const todoTitle = document.createElement('div');
-    todoTitle.innerHTML = `<i class="far fa-square"></i>&ensp; ${todo.title}`;
+    todoTitle.innerText = todo.title;
     const todoDescription = document.createElement('div');
     todoDescription.innerText = todo.description;
     const todoDate = document.createElement('div');
@@ -37,10 +40,11 @@ const renderTodo = (todo) => {
     todoDelete.setAttribute('id', `delete-${todo.id}`)
     todoDelete.innerHTML = `<i class="fas fa-trash-alt"></i>`;
 
-    todoContainer.append(todoTitle, todoDescription, todoDate, todoPriority, todoDelete);
+    todoContainer.append(todoStatus, todoTitle, todoDescription, todoDate, todoPriority, todoDelete);
     todoList.append(todoContainer);
 
     document.getElementById(`delete-${todo.id}`).addEventListener('click', deleteTodo);
+    document.getElementById(`status-${todo.id}`).addEventListener('click', changeStatus);
 };
 
 const openForm = () => {
@@ -63,4 +67,14 @@ const deleteTodo = (e) => {
     todoList.removeChild(todo);
 }
 
-export { currentProject, newTodo, openForm, closeForm, deleteTodo };
+const changeStatus = (e) => {
+    const todoIndex = e.path[2].dataset.id;
+    const targetedTodo = document.getElementById(`status-${todoIndex}`);
+    if (targetedTodo.innerHTML == '<i class="far fa-square" aria-hidden="true"></i>') {
+        return targetedTodo.innerHTML = '<i class="far fa-check-square"></i>';
+    } else {
+        return targetedTodo.innerHTML = '<i class="far fa-square"></i>';
+    };
+};
+
+export { currentProject, newTodo, openForm, closeForm };

@@ -196,24 +196,38 @@ h1 {
     background-color: #3d3d3d;
 }
 
-.todo div:nth-child(1),
-.todo div:nth-child(3),
-.todo div:nth-child(4) {
+.todo div:nth-child(2),
+.todo div:nth-child(4),
+.todo div:nth-child(5) {
     flex: 1 1 auto;
 }
 
-.todo div:nth-child(2) {
+.todo div:nth-child(3) {
     flex: 1 0 auto;
     font-weight: 400;
 }
 
-.todo div:nth-child(3),
-.todo div:nth-child(4) {
+.todo div:nth-child(4),
+.todo div:nth-child(5) {
     text-align: right;
 }
 
-.todo div:nth-child(5) {
+.todo div:nth-child(6) {
     margin-left: 20px;
+}
+
+.todo div:nth-child(1) {
+    margin-right: 20px;
+}
+
+.fa-square:hover {
+    cursor: pointer;
+    color: #bb86fc;
+}
+
+.fa-check-square {
+    cursor: pointer;
+    color: #bb86fc;
 }
 
 .fa-trash-alt:hover {
