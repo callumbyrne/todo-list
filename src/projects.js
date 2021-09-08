@@ -1,5 +1,8 @@
+import { removeAllTodos, renderTodo } from "./todos";
+
 const projectsArray = [['Default']];
 let currentProject = projectsArray[0];
+const todoList = document.getElementById('todos');
 
 const newProject = (e) => {
     e.preventDefault();
@@ -16,13 +19,28 @@ const newProject = (e) => {
 
     const newArray = [projectName];
     projectsArray.push(newArray);
-    console.table(projectsArray);
     document.getElementById('projectForm').reset();
 
     const project = document.createElement('div');
     project.innerText = projectName;
     project.classList.add('project');
     projects.appendChild(project);
+
+    project.addEventListener('click', (e) => {
+        switchProject(e);
+        removeAllTodos();
+        console.log(currentProject);
+        currentProject.forEach(todo => renderTodo(todo));
+    })
+};
+
+const switchProject = (e) => {
+    const selectedProject = e.target.innerText;
+    const projectIndex = projectsArray.findIndex(project => project[0] == selectedProject);
+    currentProject = projectsArray[projectIndex];
+
+    const todosTitle = document.getElementById('todosTitle');
+    todosTitle.innerText = selectedProject;
 };
 
 

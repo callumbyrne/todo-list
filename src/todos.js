@@ -1,7 +1,7 @@
 import { currentProject } from './projects';
 import { Todo } from './factory';
 
-const todoList = document.querySelector('.todos');
+const todoList = document.querySelector('#todos');
 let id = 1;
 
 const newTodo = (e) => {
@@ -13,6 +13,7 @@ const newTodo = (e) => {
     const priority = document.getElementById('priority').value;
 
     const todo = Todo(title, description, date, priority, id);
+    //pushes the todo to the current project selected from the projects js
     currentProject.push(todo);
     id += 1;
     document.querySelector('#todoForm').reset();
@@ -76,4 +77,11 @@ const changeStatus = (e) => {
     };
 };
 
-export { currentProject, newTodo, openForm, closeForm };
+const removeAllTodos = () => {
+    const todos = document.getElementsByClassName('todo');
+    while (todos[0]) {
+        todos[0].parentNode.removeChild(todos[0]);
+    };
+};
+
+export { currentProject, newTodo, openForm, closeForm, removeAllTodos, renderTodo };
