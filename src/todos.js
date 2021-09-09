@@ -84,4 +84,14 @@ const removeAllTodos = () => {
     };
 };
 
-export { currentProject, newTodo, openForm, closeForm, removeAllTodos, renderTodo };
+const renderAllTodos = (currentProject) => {
+    if (currentProject.length > 1) {
+        for (let i = 1; i < currentProject.length; i++) {
+            renderTodo(currentProject[i]);
+        };
+    } else {
+        return;
+    };
+};
+
+export { newTodo, openForm, closeForm, removeAllTodos, renderTodo, renderAllTodos };

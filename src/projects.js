@@ -1,4 +1,4 @@
-import { removeAllTodos, renderTodo } from "./todos";
+import { removeAllTodos, renderTodo, renderAllTodos } from "./todos";
 
 const projectsArray = [['Default']];
 let currentProject = projectsArray[0];
@@ -24,19 +24,20 @@ const newProject = (e) => {
     const project = document.createElement('div');
     project.innerText = projectName;
     project.classList.add('project');
+    project.setAttribute('data-project', (projectsArray.length - 1));
     projects.appendChild(project);
 
     project.addEventListener('click', (e) => {
+        console.log(e.target.dataset.project);
         switchProject(e);
         removeAllTodos();
-        console.log(currentProject);
-        currentProject.forEach(todo => renderTodo(todo));
+        renderAllTodos(currentProject);
     })
 };
 
 const switchProject = (e) => {
     const selectedProject = e.target.innerText;
-    const projectIndex = projectsArray.findIndex(project => project[0] == selectedProject);
+    const projectIndex = e.target.dataset.project;
     currentProject = projectsArray[projectIndex];
 
     const todosTitle = document.getElementById('todosTitle');
