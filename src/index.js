@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //open add new todo form
     document.querySelector('.newTodo').addEventListener('click', openForm);
     //close add new todo form
-    document.getElementById('cancel').addEventListener('click', closeForm);
+    document.getElementById('cancel').addEventListener('click', (e) => closeForm(e));
     //submit new todo
     document.getElementById('submitBtn').addEventListener('click', (e) => newTodo(e));
     //delete todo
