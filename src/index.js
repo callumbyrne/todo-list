@@ -1,7 +1,6 @@
 import './styles.css';
-import { newProject, projectsArray } from './projects';
-import { currentProject } from './todos';
-import { newTodo, openForm, closeForm } from './todos';
+import { newProject, currentProject, switchProject, deleteProject } from './projects';
+import { newTodo, openForm, closeForm, removeAllTodos, renderAllTodos } from './todos';
 
 document.addEventListener('DOMContentLoaded', () => {
     //create new project
@@ -12,5 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('cancel').addEventListener('click', (e) => closeForm(e));
     //submit new todo
     document.getElementById('submitBtn').addEventListener('click', (e) => newTodo(e));
-    //delete todo
+    //event listener to switch to default project
+    document.querySelector('.project').addEventListener('click', (e) => {
+        switchProject(e);
+        removeAllTodos();
+        renderAllTodos(currentProject);
+    });
+    //delete default project
+    document.querySelector('.projectDelete').addEventListener('click', deleteProject);
 });

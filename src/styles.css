@@ -59,16 +59,36 @@ h1 {
 }
 
 #projects {
-    margin: 0px 0px 20px 10px;
+    margin-left: 10px;
 }
 
 .project {
     padding: 7px 10px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .project:hover {
     background-color: #3d3d3d;
+    cursor: pointer;
+}
+
+.projectDelete {
+    height: 21px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.projectDelete:hover {
+    color: #cf3e40;
+}
+
+.projectForm {
+    margin-top: 40px;
 }
 
 .projectForm form{
