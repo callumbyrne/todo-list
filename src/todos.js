@@ -1,4 +1,4 @@
-import { currentProject } from './projects';
+import { currentProject, projectsArray } from './projects';
 import { Todo } from './factory';
 
 const todoList = document.querySelector('#todos');
@@ -15,7 +15,8 @@ const newTodo = (e) => {
     const todo = Todo(status, title, description, date, priority);
     //pushes the todo to the current project selected from the projects js
     currentProject.push(todo);
-    console.log(currentProject);
+    localStorage.setItem('projectsArray', JSON.stringify(projectsArray));
+
     document.querySelector('#todoForm').reset();
     renderTodo(todo);
     closeForm(e);
@@ -67,6 +68,7 @@ const deleteTodo = (e) => {
     // const todo = document.querySelector(`[data-todo='${todoIndex}']`);
     // todoList.removeChild(todo);
     currentProject.splice(todoIndex, 1);
+    localStorage.setItem('projectsArray', JSON.stringify(projectsArray));
     removeAllTodos();
     renderAllTodos(currentProject);
 }
@@ -76,11 +78,12 @@ const changeStatus = (e) => {
     const targetedTodo = document.getElementById(`status-${todoIndex}`);
     if (targetedTodo.innerHTML == '<i class="far fa-square" aria-hidden="true"></i>') {
         currentProject[todoIndex].status = 1;
-        return targetedTodo.innerHTML = '<i class="far fa-check-square"></i>';
+        targetedTodo.innerHTML = '<i class="far fa-check-square"></i>';
     } else {
         currentProject[todoIndex].status = 0;
-        return targetedTodo.innerHTML = '<i class="far fa-square"></i>';
+        targetedTodo.innerHTML = '<i class="far fa-square"></i>';
     };
+    localStorage.setItem('projectsArray', JSON.stringify(projectsArray));
 };
 
 const removeAllTodos = () => {

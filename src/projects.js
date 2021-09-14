@@ -1,8 +1,15 @@
 import { removeAllTodos, renderAllTodos } from "./todos";
 
-const projectsArray = [['Default']];
-let currentProject = projectsArray[0];
+
+let projectsArray = JSON.parse(localStorage.getItem('projectsArray')) || [['Default']];
 const newTodo = document.querySelector('.newTodo');
+
+if (JSON.parse(localStorage.getItem('projectsArray')) == '') {
+    projectsArray = [['Default']];
+    console.log(projectsArray);
+}
+
+let currentProject = projectsArray[0];
 
 const newProject = (e) => {
     e.preventDefault();
@@ -19,6 +26,9 @@ const newProject = (e) => {
     projectsArray.push(newArray);
     document.getElementById('projectForm').reset();
 
+    // saving to local storage
+    localStorage.setItem('projectsArray', JSON.stringify(projectsArray));
+
     renderProject(projectName);
 };
 
@@ -26,15 +36,17 @@ const renderProject = (projectName, index = projectsArray.length - 1) => {
     const project = document.createElement('div');
     project.classList.add('project');
     project.setAttribute('data-project', (index));
-    project.innerHTML = `&#129312;&ensp; ${projectName}`;
+    const projectBody = document.createElement('div')
+    projectBody.innerHTML = `&#129312;&ensp; ${projectName}`;
+    projectBody.classList.add('projectBody')
     const projectDelete = document.createElement('div');
     projectDelete.innerHTML = '<i class="fas fa-times"></i>';
     projectDelete.classList.add('projectDelete');
 
-    project.appendChild(projectDelete);
+    project.append(projectBody, projectDelete);
     projects.appendChild(project);
 
-    project.addEventListener('click', (e) => {
+    projectBody.addEventListener('click', (e) => {
         switchProject(e);
         removeAllTodos();
         renderAllTodos(currentProject);
@@ -44,7 +56,7 @@ const renderProject = (projectName, index = projectsArray.length - 1) => {
 };
 
 const switchProject = (e) => {
-    const projectIndex = e.target.dataset.project;
+    const projectIndex = e.path[1].dataset.project;
     if (!projectIndex) {
         return;
     } else {
@@ -66,16 +78,22 @@ const deleteProject = (e) => {
         if (previousIndex > -1) {
             currentProject = projectsArray[previousIndex];
             todosTitle.innerText = projectsArray[previousIndex][0];
+            removeAllTodos();
+            renderAllTodos(currentProject);
         } else if (nextIndex < projectsArray.length) {
             currentProject = projectsArray[nextIndex];
             todosTitle.innerText = projectsArray[nextIndex][0];
+            removeAllTodos();
+            renderAllTodos(currentProject);
         } else {
             todosTitle.innerText = '';
+            removeAllTodos();
             newTodo.style.display = 'none';
         };
     };
 
     projectsArray.splice(selectedProjectIndex, 1);
+    localStorage.setItem('projectsArray', JSON.stringify(projectsArray));
     removeAllProjects();
     renderAllProjects();
 }
@@ -99,4 +117,4 @@ const renderAllProjects = () => {
 
 
 
-export { newProject, currentProject, switchProject, deleteProject };
+export { newProject, currentProject, switchProject, deleteProject, projectsArray, removeAllProjects, renderAllProjects };

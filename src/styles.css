@@ -76,6 +76,10 @@ h1 {
     cursor: pointer;
 }
 
+.projectBody {
+    flex: 1 1 auto;
+}
+
 .projectDelete {
     height: 21px;
     display: flex;
