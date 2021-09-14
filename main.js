@@ -22,11 +22,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./Raleway/static/Raleway-Bold.ttf */ "./src/Raleway/static/Raleway-Bold.ttf"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./Raleway/Raleway-VariableFont_wght.ttf */ "./src/Raleway/Raleway-VariableFont_wght.ttf"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\r\n    font-family: 'Raleway';\r\n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n}\r\n\r\nhtml {\r\n    box-sizing: border-box;\r\n    background-color: #212121;\r\n    font-family: 'Raleway', sans-serif;\r\n    color: #dedede;\r\n    font-size: 16px;\r\n}\r\n\r\nbody {\r\n    height: 100%;\r\n    margin: 0;\r\n}\r\n\r\n#content {\r\n    height: 100vh;\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n\r\n.nav {\r\n    flex: 0 1 auto;\r\n    background-color: #121212;\r\n    text-align: center;\r\n    font-size: 1.5rem;\r\n}\r\n\r\nh1 {\r\n    margin: 10px auto;\r\n    display: inline;\r\n}\r\n\r\n#check {\r\n    color: #bb86fc;\r\n}\r\n\r\n.body {\r\n    flex: 1 1 auto;\r\n    display: flex;\r\n}\r\n\r\n.sidebar {\r\n    background-color: #2e2e2e;\r\n    flex: 0 1 15%;\r\n    box-shadow: 0 1px 10px rgb(15, 15, 15);\r\n    padding: 20px;\r\n}\r\n\r\n.form form{\r\n    display: flex;\r\n}\r\n\r\n#newProject {\r\n    flex: 1 1 auto;\r\n    height: 1.5rem;\r\n    border: none;\r\n    padding: 1px;\r\n    border-radius: 3px;\r\n    text-indent: 10px;\r\n}\r\n\r\n#newProjectBtn {\r\n    flex: 0 1 auto;\r\n    background-color: #bb86fc;\r\n    border: none;\r\n    border-radius: 3px;\r\n    height: 1.6rem;\r\n    width: 1.6rem;\r\n    font-weight: 600;\r\n    margin-left: 10px;\r\n}\r\n\r\n#newProjectBtn:active {\r\n    transform: translateX(1px) translateY(1px);\r\n}\r\n\r\n.main {\r\n    flex: 1 1 auto;\r\n}\r\n\r\n.footer {\r\n    flex: 0 1 40px;\r\n    background-color: #121212;\r\n    color: #bb86fc;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    font-size: 1.5rem;\r\n    font-weight: 600;\r\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;IACtB,4CAA2C;AAC/C;;AAEA;IACI,sBAAsB;IACtB,yBAAyB;IACzB,kCAAkC;IAClC,cAAc;IACd,eAAe;AACnB;;AAEA;IACI,YAAY;IACZ,SAAS;AACb;;AAEA;IACI,aAAa;IACb,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,cAAc;IACd,yBAAyB;IACzB,kBAAkB;IAClB,iBAAiB;AACrB;;AAEA;IACI,iBAAiB;IACjB,eAAe;AACnB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,cAAc;IACd,aAAa;AACjB;;AAEA;IACI,yBAAyB;IACzB,aAAa;IACb,sCAAsC;IACtC,aAAa;AACjB;;AAEA;IACI,aAAa;AACjB;;AAEA;IACI,cAAc;IACd,cAAc;IACd,YAAY;IACZ,YAAY;IACZ,kBAAkB;IAClB,iBAAiB;AACrB;;AAEA;IACI,cAAc;IACd,yBAAyB;IACzB,YAAY;IACZ,kBAAkB;IAClB,cAAc;IACd,aAAa;IACb,gBAAgB;IAChB,iBAAiB;AACrB;;AAEA;IACI,0CAA0C;AAC9C;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,cAAc;IACd,yBAAyB;IACzB,cAAc;IACd,aAAa;IACb,mBAAmB;IACnB,uBAAuB;IACvB,iBAAiB;IACjB,gBAAgB;AACpB","sourcesContent":["@font-face {\r\n    font-family: 'Raleway';\r\n    src: url(./Raleway/static/Raleway-Bold.ttf);\r\n}\r\n\r\nhtml {\r\n    box-sizing: border-box;\r\n    background-color: #212121;\r\n    font-family: 'Raleway', sans-serif;\r\n    color: #dedede;\r\n    font-size: 16px;\r\n}\r\n\r\nbody {\r\n    height: 100%;\r\n    margin: 0;\r\n}\r\n\r\n#content {\r\n    height: 100vh;\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n\r\n.nav {\r\n    flex: 0 1 auto;\r\n    background-color: #121212;\r\n    text-align: center;\r\n    font-size: 1.5rem;\r\n}\r\n\r\nh1 {\r\n    margin: 10px auto;\r\n    display: inline;\r\n}\r\n\r\n#check {\r\n    color: #bb86fc;\r\n}\r\n\r\n.body {\r\n    flex: 1 1 auto;\r\n    display: flex;\r\n}\r\n\r\n.sidebar {\r\n    background-color: #2e2e2e;\r\n    flex: 0 1 15%;\r\n    box-shadow: 0 1px 10px rgb(15, 15, 15);\r\n    padding: 20px;\r\n}\r\n\r\n.form form{\r\n    display: flex;\r\n}\r\n\r\n#newProject {\r\n    flex: 1 1 auto;\r\n    height: 1.5rem;\r\n    border: none;\r\n    padding: 1px;\r\n    border-radius: 3px;\r\n    text-indent: 10px;\r\n}\r\n\r\n#newProjectBtn {\r\n    flex: 0 1 auto;\r\n    background-color: #bb86fc;\r\n    border: none;\r\n    border-radius: 3px;\r\n    height: 1.6rem;\r\n    width: 1.6rem;\r\n    font-weight: 600;\r\n    margin-left: 10px;\r\n}\r\n\r\n#newProjectBtn:active {\r\n    transform: translateX(1px) translateY(1px);\r\n}\r\n\r\n.main {\r\n    flex: 1 1 auto;\r\n}\r\n\r\n.footer {\r\n    flex: 0 1 40px;\r\n    background-color: #121212;\r\n    color: #bb86fc;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    font-size: 1.5rem;\r\n    font-weight: 600;\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\r\n    font-family: 'Raleway';\r\n    src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n}\r\n\r\nhtml {\r\n    box-sizing: border-box;\r\n    background-color: #212121;\r\n    font-family: 'Raleway', sans-serif;\r\n    color: #dedede;\r\n    font-size: 16px;\r\n    font-weight: 700;\r\n    letter-spacing: 1px;\r\n}\r\n\r\nbody {\r\n    height: 100%;\r\n    margin: 0;\r\n}\r\n\r\n#content {\r\n    height: 100vh;\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n\r\n.nav {\r\n    flex: 0 1 auto;\r\n    background-color: #121212;\r\n    text-align: center;\r\n    font-size: 1.5rem;\r\n}\r\n\r\nh1 {\r\n    margin: 10px auto;\r\n    display: inline;\r\n}\r\n\r\n#todosTitle {\r\n    border-bottom: 1px solid #aaaaaa;\r\n    margin: 0px;\r\n    padding: 15px 0px;\r\n}\r\n\r\n#check {\r\n    color: #bb86fc;\r\n}\r\n\r\n.body {\r\n    flex: 1 1 auto;\r\n    display: flex;\r\n}\r\n\r\n.sidebar {\r\n    background-color: #2e2e2e;\r\n    flex: 0 1 15%;\r\n    box-shadow: 0 1px 10px rgb(15, 15, 15);\r\n    padding: 20px;\r\n}\r\n\r\n#projects {\r\n    margin-left: 10px;\r\n}\r\n\r\n.project {\r\n    padding: 7px 10px;\r\n    border-radius: 5px;\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\n.project:hover {\r\n    background-color: #3d3d3d;\r\n    cursor: pointer;\r\n}\r\n\r\n.projectBody {\r\n    flex: 1 1 auto;\r\n}\r\n\r\n.projectDelete {\r\n    height: 21px;\r\n    display: flex;\r\n    align-items: center;\r\n    font-size: 1.2rem;\r\n}\r\n\r\n.projectDelete:hover {\r\n    color: #cf3e40;\r\n}\r\n\r\n.projectForm {\r\n    margin-top: 40px;\r\n}\r\n\r\n.projectForm form{\r\n    display: flex;\r\n}\r\n\r\n#newProject {\r\n    flex: 1 1 auto;\r\n    height: 1.7rem;\r\n    border: none;\r\n    padding: 0px;\r\n    border-radius: 3px;\r\n    text-indent: 10px;\r\n}\r\n\r\n#newProjectBtn {\r\n    flex: 0 1 auto;\r\n    background-color: #bb86fc;\r\n    border: none;\r\n    border-radius: 3px;\r\n    height: 1.7rem;\r\n    width: 1.7rem;\r\n    font-weight: 600;\r\n    margin-left: 10px;\r\n    cursor: pointer;\r\n}\r\n\r\n#newProjectBtn:active {\r\n    transform: translateX(1px) translateY(1px);\r\n}\r\n\r\n.main {\r\n    flex: 1 1 auto;\r\n    display: flex;\r\n    padding: 50px 10%;\r\n}\r\n\r\n.display {\r\n    flex: 1 1 auto;\r\n    background-color: #2e2e2e;\r\n    border-radius: 10px;\r\n    padding: 30px;\r\n}\r\n\r\n#todos {\r\n    margin: 10px 0px 50px 30px;\r\n}\r\n\r\n.newTodo {\r\n    display: block;\r\n    width: fit-content;\r\n    cursor: pointer;\r\n}\r\n\r\n.newTodo:hover {\r\n    color: white;\r\n}\r\n\r\n.form-body {\r\n    display: none;\r\n    background-color: #d3d3d3;\r\n    border-radius: 10px;\r\n    color: #212121;\r\n    padding: 20px;\r\n}\r\n\r\n.form-box {\r\n    display: flex;\r\n    flex-direction: column;\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.form-box label {\r\n    margin-bottom: 10px;\r\n}\r\n\r\n.form-box input {\r\n    border-radius: 5px;\r\n    border: 1px solid black;\r\n    height: 1.7em;\r\n}\r\n\r\n.form-box select {\r\n  border-radius: 5px;\r\n  border: 1px solid black;\r\n  height: 2em;\r\n}\r\n\r\n#date {\r\n    width: fit-content;\r\n}\r\n\r\n#priority {\r\n    width: fit-content;\r\n}\r\n\r\n#submitBtn {\r\n    padding: 10px;\r\n    background-color: #47cfcf;\r\n    border: none;\r\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 1px 5px rgba(0, 0, 0, 0.26); \r\n    transition: 0.2s ease-out;\r\n    border-radius: 10px;\r\n    color: black;\r\n    cursor: pointer;\r\n    font-weight: 600;\r\n}\r\n\r\n#submitBtn:active {\r\n  transform: translateX(1.5px) translateY(1.5px);\r\n}\r\n\r\n#cancel {\r\n    padding: 10px;\r\n    background-color: #eb6e6e;\r\n    border: none;\r\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 1px 5px rgba(0, 0, 0, 0.26); \r\n    transition: 0.2s ease-out;\r\n    border-radius: 10px;\r\n    color: black;\r\n    cursor: pointer;\r\n    font-weight: 600;\r\n}\r\n\r\n#cancel:active {\r\n  transform: translateX(1.5px) translateY(1.5px);\r\n}\r\n\r\n.todo {\r\n    /* margin: 10px auto; */\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    /* border-bottom: 1px solid #aaaaaa; */\r\n    font-weight: 700;\r\n    padding: 15px 10px;\r\n    border-radius: 5px;\r\n}\r\n\r\n.todo:hover {\r\n    background-color: #3d3d3d;\r\n}\r\n\r\n.todo div:nth-child(2) {\r\n    flex: 0 1 auto;\r\n    margin-right: 30px;\r\n}\r\n\r\n.todo div:nth-child(3) {\r\n    flex: 1 0 auto;\r\n    font-weight: 400;\r\n}\r\n\r\n.todo div:nth-child(4),\r\n.todo div:nth-child(5) {\r\n    text-align: right;\r\n    width: fit-content;\r\n    margin-left: 30px;\r\n}\r\n\r\n.todo div:nth-child(6) {\r\n    margin-left: 30px;\r\n}\r\n\r\n.todo div:nth-child(1) {\r\n    margin-right: 20px;\r\n}\r\n\r\n.fa-square:hover {\r\n    cursor: pointer;\r\n    color: #bb86fc;\r\n}\r\n\r\n.fa-check-square {\r\n    cursor: pointer;\r\n    color: #bb86fc;\r\n}\r\n\r\n.fa-trash-alt:hover {\r\n    cursor: pointer;\r\n    color: #cf3e40;\r\n}\r\n\r\n#footer {\r\n    flex: 0 1 40px;\r\n    background-color: #121212;\r\n    color: #bb86fc;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    font-size: 1.5rem;\r\n    font-weight: 600;\r\n}", "",{"version":3,"sources":["webpack://./src/styles.css"],"names":[],"mappings":"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","sourcesContent":["@font-face {\r\n    font-family: 'Raleway';\r\n    src: url(./Raleway/Raleway-VariableFont_wght.ttf);\r\n}\r\n\r\nhtml {\r\n    box-sizing: border-box;\r\n    background-color: #212121;\r\n    font-family: 'Raleway', sans-serif;\r\n    color: #dedede;\r\n    font-size: 16px;\r\n    font-weight: 700;\r\n    letter-spacing: 1px;\r\n}\r\n\r\nbody {\r\n    height: 100%;\r\n    margin: 0;\r\n}\r\n\r\n#content {\r\n    height: 100vh;\r\n    display: flex;\r\n    flex-direction: column;\r\n}\r\n\r\n.nav {\r\n    flex: 0 1 auto;\r\n    background-color: #121212;\r\n    text-align: center;\r\n    font-size: 1.5rem;\r\n}\r\n\r\nh1 {\r\n    margin: 10px auto;\r\n    display: inline;\r\n}\r\n\r\n#todosTitle {\r\n    border-bottom: 1px solid #aaaaaa;\r\n    margin: 0px;\r\n    padding: 15px 0px;\r\n}\r\n\r\n#check {\r\n    color: #bb86fc;\r\n}\r\n\r\n.body {\r\n    flex: 1 1 auto;\r\n    display: flex;\r\n}\r\n\r\n.sidebar {\r\n    background-color: #2e2e2e;\r\n    flex: 0 1 15%;\r\n    box-shadow: 0 1px 10px rgb(15, 15, 15);\r\n    padding: 20px;\r\n}\r\n\r\n#projects {\r\n    margin-left: 10px;\r\n}\r\n\r\n.project {\r\n    padding: 7px 10px;\r\n    border-radius: 5px;\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\n.project:hover {\r\n    background-color: #3d3d3d;\r\n    cursor: pointer;\r\n}\r\n\r\n.projectBody {\r\n    flex: 1 1 auto;\r\n}\r\n\r\n.projectDelete {\r\n    height: 21px;\r\n    display: flex;\r\n    align-items: center;\r\n    font-size: 1.2rem;\r\n}\r\n\r\n.projectDelete:hover {\r\n    color: #cf3e40;\r\n}\r\n\r\n.projectForm {\r\n    margin-top: 40px;\r\n}\r\n\r\n.projectForm form{\r\n    display: flex;\r\n}\r\n\r\n#newProject {\r\n    flex: 1 1 auto;\r\n    height: 1.7rem;\r\n    border: none;\r\n    padding: 0px;\r\n    border-radius: 3px;\r\n    text-indent: 10px;\r\n}\r\n\r\n#newProjectBtn {\r\n    flex: 0 1 auto;\r\n    background-color: #bb86fc;\r\n    border: none;\r\n    border-radius: 3px;\r\n    height: 1.7rem;\r\n    width: 1.7rem;\r\n    font-weight: 600;\r\n    margin-left: 10px;\r\n    cursor: pointer;\r\n}\r\n\r\n#newProjectBtn:active {\r\n    transform: translateX(1px) translateY(1px);\r\n}\r\n\r\n.main {\r\n    flex: 1 1 auto;\r\n    display: flex;\r\n    padding: 50px 10%;\r\n}\r\n\r\n.display {\r\n    flex: 1 1 auto;\r\n    background-color: #2e2e2e;\r\n    border-radius: 10px;\r\n    padding: 30px;\r\n}\r\n\r\n#todos {\r\n    margin: 10px 0px 50px 30px;\r\n}\r\n\r\n.newTodo {\r\n    display: block;\r\n    width: fit-content;\r\n    cursor: pointer;\r\n}\r\n\r\n.newTodo:hover {\r\n    color: white;\r\n}\r\n\r\n.form-body {\r\n    display: none;\r\n    background-color: #d3d3d3;\r\n    border-radius: 10px;\r\n    color: #212121;\r\n    padding: 20px;\r\n}\r\n\r\n.form-box {\r\n    display: flex;\r\n    flex-direction: column;\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.form-box label {\r\n    margin-bottom: 10px;\r\n}\r\n\r\n.form-box input {\r\n    border-radius: 5px;\r\n    border: 1px solid black;\r\n    height: 1.7em;\r\n}\r\n\r\n.form-box select {\r\n  border-radius: 5px;\r\n  border: 1px solid black;\r\n  height: 2em;\r\n}\r\n\r\n#date {\r\n    width: fit-content;\r\n}\r\n\r\n#priority {\r\n    width: fit-content;\r\n}\r\n\r\n#submitBtn {\r\n    padding: 10px;\r\n    background-color: #47cfcf;\r\n    border: none;\r\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 1px 5px rgba(0, 0, 0, 0.26); \r\n    transition: 0.2s ease-out;\r\n    border-radius: 10px;\r\n    color: black;\r\n    cursor: pointer;\r\n    font-weight: 600;\r\n}\r\n\r\n#submitBtn:active {\r\n  transform: translateX(1.5px) translateY(1.5px);\r\n}\r\n\r\n#cancel {\r\n    padding: 10px;\r\n    background-color: #eb6e6e;\r\n    border: none;\r\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 1px 5px rgba(0, 0, 0, 0.26); \r\n    transition: 0.2s ease-out;\r\n    border-radius: 10px;\r\n    color: black;\r\n    cursor: pointer;\r\n    font-weight: 600;\r\n}\r\n\r\n#cancel:active {\r\n  transform: translateX(1.5px) translateY(1.5px);\r\n}\r\n\r\n.todo {\r\n    /* margin: 10px auto; */\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    /* border-bottom: 1px solid #aaaaaa; */\r\n    font-weight: 700;\r\n    padding: 15px 10px;\r\n    border-radius: 5px;\r\n}\r\n\r\n.todo:hover {\r\n    background-color: #3d3d3d;\r\n}\r\n\r\n.todo div:nth-child(2) {\r\n    flex: 0 1 auto;\r\n    margin-right: 30px;\r\n}\r\n\r\n.todo div:nth-child(3) {\r\n    flex: 1 0 auto;\r\n    font-weight: 400;\r\n}\r\n\r\n.todo div:nth-child(4),\r\n.todo div:nth-child(5) {\r\n    text-align: right;\r\n    width: fit-content;\r\n    margin-left: 30px;\r\n}\r\n\r\n.todo div:nth-child(6) {\r\n    margin-left: 30px;\r\n}\r\n\r\n.todo div:nth-child(1) {\r\n    margin-right: 20px;\r\n}\r\n\r\n.fa-square:hover {\r\n    cursor: pointer;\r\n    color: #bb86fc;\r\n}\r\n\r\n.fa-check-square {\r\n    cursor: pointer;\r\n    color: #bb86fc;\r\n}\r\n\r\n.fa-trash-alt:hover {\r\n    cursor: pointer;\r\n    color: #cf3e40;\r\n}\r\n\r\n#footer {\r\n    flex: 0 1 40px;\r\n    background-color: #121212;\r\n    color: #bb86fc;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    font-size: 1.5rem;\r\n    font-weight: 600;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -526,13 +526,298 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/Raleway/static/Raleway-Bold.ttf":
-/*!*********************************************!*\
-  !*** ./src/Raleway/static/Raleway-Bold.ttf ***!
-  \*********************************************/
+/***/ "./src/factory.js":
+/*!************************!*\
+  !*** ./src/factory.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Todo": () => (/* binding */ Todo)
+/* harmony export */ });
+// Todo factory function
+const Todo = (status, title, description, date, priority) => {
+    return { status, title, description, date, priority };
+};
+
+
+
+/***/ }),
+
+/***/ "./src/projects.js":
+/*!*************************!*\
+  !*** ./src/projects.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "newProject": () => (/* binding */ newProject),
+/* harmony export */   "currentProject": () => (/* binding */ currentProject),
+/* harmony export */   "switchProject": () => (/* binding */ switchProject),
+/* harmony export */   "deleteProject": () => (/* binding */ deleteProject),
+/* harmony export */   "projectsArray": () => (/* binding */ projectsArray),
+/* harmony export */   "removeAllProjects": () => (/* binding */ removeAllProjects),
+/* harmony export */   "renderAllProjects": () => (/* binding */ renderAllProjects)
+/* harmony export */ });
+/* harmony import */ var _todos__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./todos */ "./src/todos.js");
+
+
+
+let projectsArray = JSON.parse(localStorage.getItem('projectsArray')) || [['Default']];
+const newTodo = document.querySelector('.newTodo');
+
+if (JSON.parse(localStorage.getItem('projectsArray')) == '') {
+    projectsArray = [['Default']];
+    console.log(projectsArray);
+}
+
+let currentProject = projectsArray[0];
+
+const newProject = (e) => {
+    e.preventDefault();
+
+    const projectName = document.getElementById('newProject').value;
+
+    if (projectName.length > 17) {
+        alert('Project name is too long!');
+        document.querySelector('.projectForm').reset();
+        return;
+    };
+
+    const newArray = [projectName];
+    projectsArray.push(newArray);
+    document.getElementById('projectForm').reset();
+
+    // saving to local storage
+    localStorage.setItem('projectsArray', JSON.stringify(projectsArray));
+
+    renderProject(projectName);
+};
+
+const renderProject = (projectName, index = projectsArray.length - 1) => {
+    const project = document.createElement('div');
+    project.classList.add('project');
+    project.setAttribute('data-project', (index));
+    const projectBody = document.createElement('div')
+    projectBody.innerHTML = `&#129312;&ensp; ${projectName}`;
+    projectBody.classList.add('projectBody')
+    const projectDelete = document.createElement('div');
+    projectDelete.innerHTML = '<i class="fas fa-times"></i>';
+    projectDelete.classList.add('projectDelete');
+
+    project.append(projectBody, projectDelete);
+    projects.appendChild(project);
+
+    projectBody.addEventListener('click', (e) => {
+        switchProject(e);
+        (0,_todos__WEBPACK_IMPORTED_MODULE_0__.removeAllTodos)();
+        (0,_todos__WEBPACK_IMPORTED_MODULE_0__.renderAllTodos)(currentProject);
+    });
+
+    projectDelete.addEventListener('click', deleteProject);
+};
+
+const switchProject = (e) => {
+    const projectIndex = e.path[1].dataset.project;
+    if (!projectIndex) {
+        return;
+    } else {
+        currentProject = projectsArray[projectIndex];
+        const todosTitle = document.getElementById('todosTitle');
+        todosTitle.innerText = projectsArray[projectIndex][0];
+        if (newTodo.style.display == 'none') {
+            newTodo.style.display = 'block';
+        };
+    };
+};
+
+const deleteProject = (e) => {
+    const selectedProjectIndex = e.path[2].dataset.project;
+    const previousIndex = selectedProjectIndex - 1;
+    const nextIndex = parseInt(selectedProjectIndex) + 1;
+    const todosTitle = document.getElementById('todosTitle');
+    if (currentProject === projectsArray[selectedProjectIndex]) {
+        if (previousIndex > -1) {
+            currentProject = projectsArray[previousIndex];
+            todosTitle.innerText = projectsArray[previousIndex][0];
+            (0,_todos__WEBPACK_IMPORTED_MODULE_0__.removeAllTodos)();
+            (0,_todos__WEBPACK_IMPORTED_MODULE_0__.renderAllTodos)(currentProject);
+        } else if (nextIndex < projectsArray.length) {
+            currentProject = projectsArray[nextIndex];
+            todosTitle.innerText = projectsArray[nextIndex][0];
+            (0,_todos__WEBPACK_IMPORTED_MODULE_0__.removeAllTodos)();
+            (0,_todos__WEBPACK_IMPORTED_MODULE_0__.renderAllTodos)(currentProject);
+        } else {
+            todosTitle.innerText = '';
+            (0,_todos__WEBPACK_IMPORTED_MODULE_0__.removeAllTodos)();
+            newTodo.style.display = 'none';
+        };
+    };
+
+    projectsArray.splice(selectedProjectIndex, 1);
+    localStorage.setItem('projectsArray', JSON.stringify(projectsArray));
+    removeAllProjects();
+    renderAllProjects();
+}
+
+const removeAllProjects = () => {
+    const projects = document.getElementsByClassName('project');
+    while (projects[0]) {
+        projects[0].parentNode.removeChild(projects[0]);
+    };
+};
+
+const renderAllProjects = () => {
+    if (projectsArray.length > 0) {
+        for (let i = 0; i < projectsArray.length; i++) {
+            renderProject(projectsArray[i][0], i);
+        };
+    } else {
+        return;
+    };
+};
+
+
+
+
+
+/***/ }),
+
+/***/ "./src/todos.js":
+/*!**********************!*\
+  !*** ./src/todos.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "newTodo": () => (/* binding */ newTodo),
+/* harmony export */   "openForm": () => (/* binding */ openForm),
+/* harmony export */   "closeForm": () => (/* binding */ closeForm),
+/* harmony export */   "removeAllTodos": () => (/* binding */ removeAllTodos),
+/* harmony export */   "renderTodo": () => (/* binding */ renderTodo),
+/* harmony export */   "renderAllTodos": () => (/* binding */ renderAllTodos)
+/* harmony export */ });
+/* harmony import */ var _projects__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./projects */ "./src/projects.js");
+/* harmony import */ var _factory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./factory */ "./src/factory.js");
+
+
+
+const todoList = document.querySelector('#todos');
+
+const newTodo = (e) => {
+    e.preventDefault();
+
+    const status = 0;
+    const title = document.getElementById('title').value;
+    const description = document.getElementById('description').value;
+    const date = document.getElementById('date').value;
+    const priority = document.getElementById('priority').value;
+
+    const todo = (0,_factory__WEBPACK_IMPORTED_MODULE_1__.Todo)(status, title, description, date, priority);
+    //pushes the todo to the current project selected from the projects js
+    _projects__WEBPACK_IMPORTED_MODULE_0__.currentProject.push(todo);
+    localStorage.setItem('projectsArray', JSON.stringify(_projects__WEBPACK_IMPORTED_MODULE_0__.projectsArray));
+
+    document.querySelector('#todoForm').reset();
+    renderTodo(todo);
+    closeForm(e);
+};
+
+const renderTodo = (todo, index = _projects__WEBPACK_IMPORTED_MODULE_0__.currentProject.length - 1) => {
+    const todoContainer = document.createElement('div');
+    todoContainer.classList.add('todo');
+    todoContainer.setAttribute('data-todo', index);
+    const todoStatus = document.createElement('div');
+    todoStatus.setAttribute('id', `status-${index}`);
+    todoStatus.innerHTML = (todo.status === 0) ? '<i class="far fa-square"></i>' : '<i class="far fa-check-square"></i>';
+    const todoTitle = document.createElement('div');
+    todoTitle.innerText = todo.title;
+    const todoDescription = document.createElement('div');
+    todoDescription.innerText = todo.description;
+    const todoDate = document.createElement('div');
+    todoDate.innerText = todo.date || 'No Date';
+    const todoPriority = document.createElement('div');
+    todoPriority.innerText = todo.priority;
+    const todoDelete = document.createElement('div');
+    todoDelete.setAttribute('id', `delete-${index}`)
+    todoDelete.innerHTML = `<i class="fas fa-trash-alt"></i>`;
+
+    todoContainer.append(todoStatus, todoTitle, todoDescription, todoDate, todoPriority, todoDelete);
+    todoList.append(todoContainer);
+
+    document.getElementById(`delete-${index}`).addEventListener('click', deleteTodo);
+    document.getElementById(`status-${index}`).addEventListener('click', changeStatus);
+};
+
+const openForm = () => {
+    const newTodo = document.querySelector('.newTodo');
+    newTodo.style.display = 'none';
+    const formBody = document.querySelector('.form-body');
+    formBody.style.display = 'block';
+};
+
+const closeForm = (e) => {
+    e.preventDefault();
+    const formBody = document.querySelector('.form-body');
+    formBody.style.display = 'none';
+    const newTodo = document.querySelector('.newTodo');
+    newTodo.style.display = 'block';
+};
+
+const deleteTodo = (e) => {
+    const todoIndex = e.path[2].dataset.todo;
+    // const todo = document.querySelector(`[data-todo='${todoIndex}']`);
+    // todoList.removeChild(todo);
+    _projects__WEBPACK_IMPORTED_MODULE_0__.currentProject.splice(todoIndex, 1);
+    localStorage.setItem('projectsArray', JSON.stringify(_projects__WEBPACK_IMPORTED_MODULE_0__.projectsArray));
+    removeAllTodos();
+    renderAllTodos(_projects__WEBPACK_IMPORTED_MODULE_0__.currentProject);
+}
+
+const changeStatus = (e) => {
+    const todoIndex = e.path[2].dataset.todo;
+    const targetedTodo = document.getElementById(`status-${todoIndex}`);
+    if (targetedTodo.innerHTML == '<i class="far fa-square" aria-hidden="true"></i>') {
+        _projects__WEBPACK_IMPORTED_MODULE_0__.currentProject[todoIndex].status = 1;
+        targetedTodo.innerHTML = '<i class="far fa-check-square"></i>';
+    } else {
+        _projects__WEBPACK_IMPORTED_MODULE_0__.currentProject[todoIndex].status = 0;
+        targetedTodo.innerHTML = '<i class="far fa-square"></i>';
+    };
+    localStorage.setItem('projectsArray', JSON.stringify(_projects__WEBPACK_IMPORTED_MODULE_0__.projectsArray));
+};
+
+const removeAllTodos = () => {
+    const todos = document.getElementsByClassName('todo');
+    while (todos[0]) {
+        todos[0].parentNode.removeChild(todos[0]);
+    };
+};
+
+const renderAllTodos = (currentProject) => {
+    if (currentProject.length > 1) {
+        for (let i = 1; i < currentProject.length; i++) {
+            renderTodo(currentProject[i], i);
+        };
+    } else {
+        return;
+    };
+};
+
+
+
+/***/ }),
+
+/***/ "./src/Raleway/Raleway-VariableFont_wght.ttf":
+/*!***************************************************!*\
+  !*** ./src/Raleway/Raleway-VariableFont_wght.ttf ***!
+  \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "d1a96e2aa6257c864d4d.ttf";
+module.exports = __webpack_require__.p + "3fefe681f4c62116679b.ttf";
 
 /***/ })
 
@@ -673,13 +958,36 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ "./src/styles.css");
+/* harmony import */ var _projects__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./projects */ "./src/projects.js");
+/* harmony import */ var _todos__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./todos */ "./src/todos.js");
 
 
-// document.addEventListener('DOMContentLoaded', );
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    //create new project
+    document.getElementById('newProjectBtn').addEventListener('click', (e) => (0,_projects__WEBPACK_IMPORTED_MODULE_1__.newProject)(e));
+    //open add new todo form
+    document.querySelector('.newTodo').addEventListener('click', _todos__WEBPACK_IMPORTED_MODULE_2__.openForm);
+    //close add new todo form
+    document.getElementById('cancel').addEventListener('click', (e) => (0,_todos__WEBPACK_IMPORTED_MODULE_2__.closeForm)(e));
+    //submit new todo
+    document.getElementById('submitBtn').addEventListener('click', (e) => (0,_todos__WEBPACK_IMPORTED_MODULE_2__.newTodo)(e));
+    //delete default project
+    // document.querySelector('.projectDelete').addEventListener('click', deleteProject);
+});
 
 
+if (_projects__WEBPACK_IMPORTED_MODULE_1__.projectsArray[0][0] === 'Default' && _projects__WEBPACK_IMPORTED_MODULE_1__.projectsArray.length == 1 && _projects__WEBPACK_IMPORTED_MODULE_1__.projectsArray[0].length == 1) {
+    (0,_projects__WEBPACK_IMPORTED_MODULE_1__.removeAllProjects)();
+    (0,_projects__WEBPACK_IMPORTED_MODULE_1__.renderAllProjects)();
+} else {
+    (0,_projects__WEBPACK_IMPORTED_MODULE_1__.removeAllProjects)();
+    (0,_projects__WEBPACK_IMPORTED_MODULE_1__.renderAllProjects)();
+    const todosTitle = document.getElementById('todosTitle');
+    todosTitle.innerText = _projects__WEBPACK_IMPORTED_MODULE_1__.projectsArray[0][0];
+    (0,_todos__WEBPACK_IMPORTED_MODULE_2__.renderAllTodos)(_projects__WEBPACK_IMPORTED_MODULE_1__.currentProject);
+};
 })();
 
 /******/ })()
