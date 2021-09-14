@@ -2,6 +2,7 @@ import { removeAllTodos, renderAllTodos } from "./todos";
 
 const projectsArray = [['Default']];
 let currentProject = projectsArray[0];
+const newTodo = document.querySelector('.newTodo');
 
 const newProject = (e) => {
     e.preventDefault();
@@ -39,16 +40,7 @@ const renderProject = (projectName, index = projectsArray.length - 1) => {
         renderAllTodos(currentProject);
     });
 
-    projectDelete.addEventListener('click', (e) => {
-        const selectedProjectIndex = e.path[2].dataset.project;
-        if (currentProject === projectsArray[selectedProjectIndex]) {
-            const previousIndex = selectedProjectIndex - 1;
-            currentProject = projectsArray[previousIndex];
-            const todosTitle = document.getElementById('todosTitle');
-            todosTitle.innerText = projectsArray[previousIndex][0];
-        }
-        deleteProject(e);
-    });
+    projectDelete.addEventListener('click', deleteProject);
 };
 
 const switchProject = (e) => {
@@ -59,12 +51,31 @@ const switchProject = (e) => {
         currentProject = projectsArray[projectIndex];
         const todosTitle = document.getElementById('todosTitle');
         todosTitle.innerText = projectsArray[projectIndex][0];
+        if (newTodo.style.display == 'none') {
+            newTodo.style.display = 'block';
+        };
     };
 };
 
 const deleteProject = (e) => {
-    const projectIndex = e.path[2].dataset.project;
-    projectsArray.splice(projectIndex, 1);
+    const selectedProjectIndex = e.path[2].dataset.project;
+    const previousIndex = selectedProjectIndex - 1;
+    const nextIndex = parseInt(selectedProjectIndex) + 1;
+    const todosTitle = document.getElementById('todosTitle');
+    if (currentProject === projectsArray[selectedProjectIndex]) {
+        if (previousIndex > -1) {
+            currentProject = projectsArray[previousIndex];
+            todosTitle.innerText = projectsArray[previousIndex][0];
+        } else if (nextIndex < projectsArray.length) {
+            currentProject = projectsArray[nextIndex];
+            todosTitle.innerText = projectsArray[nextIndex][0];
+        } else {
+            todosTitle.innerText = '';
+            newTodo.style.display = 'none';
+        };
+    };
+
+    projectsArray.splice(selectedProjectIndex, 1);
     removeAllProjects();
     renderAllProjects();
 }
